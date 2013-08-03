@@ -1,5 +1,7 @@
 @import "_mixins.less";
 
+@default-border-color: #ddd;
+
 /* =============================================================================
    MAIN LAYOUT
    ========================================================================== */
@@ -10,6 +12,10 @@
 }
 .content {padding: 50px 0;}
 .content section {padding-top: 50px;}
+
+.clear {
+  clear:both;
+}
 
 /* =============================================================================
    BASIC STYLES
@@ -187,7 +193,7 @@ nav {
   cursor: pointer;
   border: 1px solid #fff;
   &:hover {
-    border: 1px solid #bbb;
+    border-color: @default-border-color;
   };
 }
 
@@ -204,7 +210,7 @@ nav {
   width: auto;
   min-width: 300px;
   padding: 2px 4px;
-  border: 1px solid #eee;
+  border: 1px solid @default-border-color;
 
   p {
     font-size: 12px;
@@ -222,10 +228,54 @@ nav {
    Media
    ========================================================================== */
 
-.media-photo {
+.media-tab {
+  border-width:1px 1px 0 1px;
+  border-color: @default-border-color;
+  border-style: solid;
+  font-size: 20px;
+  height: 30px;
+  text-align: center;
+  width:49%;
+  display: inline-block;
+  cursor: pointer;
+  .active {
+    background-color: #888;
+  }
+}
+
+.media-tab-photos {
+  float:left;
+}
+
+.media-tab-videos {
+  float:right;
+}
+
+.media-content {
+  border: 1px solid @default-border-color;
+  display: none;
+  .active {
+    display: block;
+  }
+}
+
+.media-element {
   float: left;
+  margin: 20px;
   width: 200px;
-  height: 200px;
+  .title {
+    position: relative;
+  }
+  img,iframe {
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+    border: 1px solid #fff;
+
+    &:hover {
+      border-color: @default-border-color;
+    }
+  }
 }
 
 /* =============================================================================
