@@ -7,6 +7,7 @@ module.exports = {
 
     // Informações da ONG
     conf: {
+	  disqus: "ongboilerplate",
       name: "Minha ong",
       description: "Descrição simples da ONG",
       address: "Largo Jorn. Glênio Peres, Centro",
