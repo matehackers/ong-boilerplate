@@ -46,8 +46,27 @@ module.exports = {
       members: "Membros",
       schedule: "Agenda",
       partners: "Apoio",
+      help: "Como ajudar?",
       contact: "Contato"
     },
+
+    initiatives: [
+      {
+        title: "Iniciativa 1",
+        description: "Descrição da atividade",
+        photo: "pic.jpg"
+      },
+      {
+        title: "Iniciativa 2",
+        description: "Descrição da atividade",
+        photo: "pic.jpg"
+      },
+      {
+        title: "Iniciativa 3",
+        description: "Descrição da atividade",
+        photo: "pic.jpg"
+      },
+    ],
 
     // List of Sponsors
     // sponsors: [
@@ -61,9 +80,9 @@ module.exports = {
     // List de parceiros e apoios
     partners: [
       {
-        name: "BrazilJS",
+        name: "Matehackers",
         logo: "themes/yellow-swan/img/partner.png",
-        url: "http://braziljs.org"
+        url: "http://matehackers.org"
       }
     ],
 
