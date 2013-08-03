@@ -171,13 +171,13 @@ nav {
   float: left;
   position: relative;
   margin: 2px;
-}
 
-.member .close {
-  float: right;
-  height: 30px;
-  margin: -10px -15px 0 0;
-  cursor: pointer;
+  .close {
+    float: right;
+    height: 30px;
+    margin: -10px -15px 0 0;
+    cursor: pointer;
+  }
 }
 
 .member-photo {
@@ -185,6 +185,10 @@ nav {
   height: 50px;
   border-radius: 50%;
   cursor: pointer;
+  border: 1px solid #fff;
+  &:hover {
+    border: 1px solid #bbb;
+  };
 }
 
 .member-info {
@@ -201,11 +205,11 @@ nav {
   min-width: 300px;
   padding: 2px 4px;
   border: 1px solid #eee;
-}
 
-.member-info p {
-  font-size: 12px;
-  margin: 5px 0;
+  p {
+    font-size: 12px;
+    margin: 5px 0;
+  }
 }
 
 .member-links {
