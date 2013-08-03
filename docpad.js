@@ -9,8 +9,8 @@ module.exports = {
     conf: {
       name: "Minha ong",
       description: "Descrição simples da ONG",
-	  disqus: "ongboilerplate",
-	  googleCalendar: "lkcl6337orvldan0l52h0sfj4k@group.calendar.google.com",
+      disqus: "ongboilerplate",
+      googleCalendar: "lkcl6337orvldan0l52h0sfj4k@group.calendar.google.com",
       address: "Largo Jorn. Glênio Peres, Centro",
       city: "Porto Alegre",
       state: "RS"
@@ -55,18 +55,19 @@ module.exports = {
       {
         title: "Iniciativa 1",
         description: "Descrição da atividade",
-        photo: "pic.jpg"
+        photo: "img/empty_photo.png"
       },
       {
         title: "Iniciativa 2",
         description: "Descrição da atividade",
-        photo: "pic.jpg"
+        photo: "img/empty_photo.png"
       },
       {
         title: "Iniciativa 3",
         description: "Descrição da atividade",
-        photo: "pic.jpg"
+        photo: "img/empty_photo.png"
       },
+    ],
 
     members: [
       {
@@ -393,7 +394,6 @@ module.exports = {
         twitter: "twitter-associado", //Ficando http://twitter.com/twitter-associado
         facebook: "fb-do-associado" //Ficando http://facebook.com/fb-do-associado
       }
->>>>>>> aaebd26996d5cbfb9583f6337f05a7e73846c1f7
     ],
 
     // List of Sponsors
