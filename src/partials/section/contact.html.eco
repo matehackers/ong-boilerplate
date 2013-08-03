@@ -1,17 +1,16 @@
 <h2 class="section-title"><%= @labels['contact'] %></h2>
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis ducimus neque amet corrupti ex temporibus similique.</p>
-<form method="post" action="contact.php" id="form" class="form">
-  <div class="control-group control-group-name">
-    <label for="name">Name</label>
-    <input type="text" name="name" id="name" placeholder="Your name">
-  </div>
-  <div class="control-group control-group-email">
-    <label for="email">E-mail</label>
-  <input type="email" name="email" id="email" placeholder="Your e-mail">
-  </div>
-  <div class="control-group">
-    <label for="message">Message</label>
-  <textarea name="" id="message" cols="30" rows="10" placeholder="Your message"></textarea>
-  </div>
-  <input class="btn btn-send" type="submit" value="Send">
-</form>
+
+<% if @conf.disqus: %>
+<div id="disqus_thread"></div>
+    <script type="text/javascript">
+        var disqus_shortname = '<%= @conf.disqus %>';
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+<% end %>
