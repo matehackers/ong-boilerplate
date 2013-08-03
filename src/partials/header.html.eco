@@ -6,7 +6,7 @@
 <header class="header">
   <div class="wrapper">
     <h2 class="logo-section">
-      <img class="logo" src="logo.jpg" title="<%= @conf.name %>"/>
+      <img class="logo" src="img/logo.jpg" title="<%= @conf.name %>"/>
       <a class="logo-link" href="#" title="<%= @conf.name %>" itemprop="name"><%= @conf.name %></a>
     </h2>
   </div>

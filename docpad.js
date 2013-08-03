@@ -29,26 +29,119 @@ module.exports = {
     // Você também pode mudar a ordem de aparição no site
     sections: [
       'about',        // Quem somos?
-      'location',     // Localização
-      'initiatives',   // Iniciativas
+      'initiatives',  // Iniciativas
+      'help',         // Como ajudar?
       'members',      // Membros, pessoas
       'schedule',     // Agenda
-      'help',         // Como ajudar?
-      'partners',     // Parceiros, apoio
-      'contact'       // Contato
+      'contact',      // Contato
+      'location',     // Localização
+      'partners'      // Parceiros, apoio
     ],
 
     // Use para traduzir os nomes das sessões ou mudar para algo que te sirva melhor
     labels: {
       about: "Quem somos?",
-      location: "Localização",
       initiatives: "Iniciativas",
-      members: "Membros",
+      help: "Como ajudar?",
+      members: "Associados",
       schedule: "Agenda",
-      partners: "Apoio",
       contact: "Contato",
-      help: "Como ajudar?"
+      location: "Localização",
+      partners: "Apoio"
     },
+
+    members: [
+      {
+        name: "Associado 1",
+        position: "Presidente",
+        photo: "img/profile.jpg",
+        bio:"Bio",
+        email: "email@email.com",
+        twitter: "twitter-associado", //Ficando http://twitter.com/twitter-associado
+        facebook: "fb-do-associado" //Ficando http://facebook.com/fb-do-associado
+      },
+      {
+        name: "Associado 1",
+        position: "Presidente",
+        photo: "img/profile.jpg",
+        bio:"Bio",
+        email: "email@email.com",
+        twitter: "twitter-associado", //Ficando http://twitter.com/twitter-associado
+        facebook: "fb-do-associado" //Ficando http://facebook.com/fb-do-associado
+      },
+      {
+        name: "Associado 1",
+        position: "Presidente",
+        photo: "img/profile.jpg",
+        bio:"Bio",
+        email: "email@email.com",
+        twitter: "twitter-associado", //Ficando http://twitter.com/twitter-associado
+        facebook: "fb-do-associado" //Ficando http://facebook.com/fb-do-associado
+      },
+      {
+        name: "Associado 1",
+        position: "Presidente",
+        photo: "img/profile.jpg",
+        bio:"Bio",
+        email: "email@email.com",
+        twitter: "twitter-associado", //Ficando http://twitter.com/twitter-associado
+        facebook: "fb-do-associado" //Ficando http://facebook.com/fb-do-associado
+      },
+      {
+        name: "Associado 1",
+        position: "Presidente",
+        photo: "img/profile.jpg",
+        bio:"Bio",
+        email: "email@email.com",
+        twitter: "twitter-associado", //Ficando http://twitter.com/twitter-associado
+        facebook: "fb-do-associado" //Ficando http://facebook.com/fb-do-associado
+      },
+      {
+        name: "Associado 1",
+        position: "Presidente",
+        photo: "img/profile.jpg",
+        bio:"Bio",
+        email: "email@email.com",
+        twitter: "twitter-associado", //Ficando http://twitter.com/twitter-associado
+        facebook: "fb-do-associado" //Ficando http://facebook.com/fb-do-associado
+      },
+      {
+        name: "Associado 1",
+        position: "Presidente",
+        photo: "img/profile.jpg",
+        bio:"Bio",
+        email: "email@email.com",
+        twitter: "twitter-associado", //Ficando http://twitter.com/twitter-associado
+        facebook: "fb-do-associado" //Ficando http://facebook.com/fb-do-associado
+      },
+      {
+        name: "Associado 1",
+        position: "Presidente",
+        photo: "img/profile.jpg",
+        bio:"Bio",
+        email: "email@email.com",
+        twitter: "twitter-associado", //Ficando http://twitter.com/twitter-associado
+        facebook: "fb-do-associado" //Ficando http://facebook.com/fb-do-associado
+      },
+      {
+        name: "Associado 1",
+        position: "Presidente",
+        photo: "img/profile.jpg",
+        bio:"Bio",
+        email: "email@email.com",
+        twitter: "twitter-associado", //Ficando http://twitter.com/twitter-associado
+        facebook: "fb-do-associado" //Ficando http://facebook.com/fb-do-associado
+      },
+      {
+        name: "Associado 1",
+        position: "Presidente",
+        photo: "img/profile.jpg",
+        bio:"Bio",
+        email: "email@email.com",
+        twitter: "twitter-associado", //Ficando http://twitter.com/twitter-associado
+        facebook: "fb-do-associado" //Ficando http://facebook.com/fb-do-associado
+      }
+    ],
 
     // List of Sponsors
     // sponsors: [
