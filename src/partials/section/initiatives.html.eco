@@ -1,0 +1,3 @@
+<h2 class="section-title"><%= @labels['initiatives'] %></h2>
+
+<p itemprop="description">Descrição das atividades e iniciativas da ONG</p>
