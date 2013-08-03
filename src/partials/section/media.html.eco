@@ -1,0 +1,13 @@
+<h2 class="section-title"><%= @labels['media'] %></h2>
+
+<div class="media">
+	<div class="media-photos">
+		<% for photo in @media.photos:%>
+			<div class="media-photo">
+				<img src="<%= photo.url %>" title="<%=photo.description%>"/>
+			</div>
+		<% end %>
+	</div>
+	<div class="media-videos">
+	</div>
+</div>

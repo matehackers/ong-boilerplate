@@ -9,15 +9,15 @@ module.exports = {
     conf: {
       name: "Minha ong",
       description: "Descrição simples da ONG",
-//      address: "Boulevard Kukulcan, 30",
-      city: "Minha Cidade",
-      state: "Meu estado"
+      address: "Largo Jorn. Glênio Peres, Centro",
+      city: "Porto Alegre",
+      state: "RS"
     },
 
     // Informações do site
     site: {
       theme: "default",
-      url: "http://confboilerplate.com"
+      url: "http://ongboilerplate.com"
 //      ,googleanalytics: "UA-33656081-1"
     },
 
@@ -31,7 +31,8 @@ module.exports = {
       'members',      // Membros, pessoas
       'schedule',     // Agenda
       'contact',      // Contato
-      //'location',     // Localização
+      'media',        // Midia(fotos, videos)
+      'location',     // Localização
       'partners'      // Parceiros, apoio
     ],
 
@@ -44,7 +45,8 @@ module.exports = {
       schedule: "Agenda",
       contact: "Contato",
       location: "Localização",
-      partners: "Apoio"
+      partners: "Apoio",
+      media: 'Multimídia'
     },
 
     members: [
@@ -382,6 +384,37 @@ module.exports = {
     //     url: "http://eventick.com.br"
     //   }
     // ],
+
+    media: {
+      photos: [
+        {
+          url: 'img/empty_photo.png',
+          description: 'First Photo'
+        },
+        {
+          url: 'img/empty_photo.png',
+          description: 'Second Photo'
+        },
+        {
+          url: 'img/empty_photo.png',
+          description: 'Third Photo'
+        },
+        {
+          url: 'img/empty_photo.png',
+          description: 'Fourth Photo'
+        },
+        {
+          url: 'img/empty_photo.png',
+          description: 'Fifth Photo'
+        },
+        {
+          url: 'img/empty_photo.png',
+          description: 'Sixth Photo'
+        }
+      ],
+      videos: [
+      ]
+    },
 
     // List de parceiros e apoios
     partners: [
