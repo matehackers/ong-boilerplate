@@ -19,7 +19,7 @@ module.exports = {
 
     // Informações do site
     site: {
-      theme: "yellow-swan",
+      theme: "default",
       url: "http://confboilerplate.com",
       googleanalytics: "UA-33656081-1"
     },
@@ -46,7 +46,8 @@ module.exports = {
       members: "Membros",
       schedule: "Agenda",
       partners: "Apoio",
-      contact: "Contato"
+      contact: "Contato",
+      help: "Como ajudar?"
     },
 
     // List of Sponsors
