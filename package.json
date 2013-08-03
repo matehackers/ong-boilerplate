@@ -1,8 +1,8 @@
 {
-  "name": "ConfBoilerplate",
-  "version": "0.2.0",
-  "description": "A kickstart to create websites for conference/events.",
-  "homepage": "http://confboilerplate.com",
+  "name": "ong-boilerplate",
+  "version": "0.0.1",
+  "description": "A kickstart to create websites for ongs.",
+  "homepage": "http://matehackers.github.io/ong-boilerplate",
   "repository": {
     "type" : "git",
     "url" : "http://github.com/braziljs/conf-boilerplate.git"
