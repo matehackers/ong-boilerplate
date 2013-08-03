@@ -39,9 +39,11 @@
 
 $(function() {
 	$('.member-photo').on('click', function() {
-		$(this).parent().find('.member-info').slideToggle('fast');
+		var currentInfo = $(this).parent().find('.member-info');
+		$('.member-info:visible').not(currentInfo).hide();
+		currentInfo.toggle();
 	});
 	$('.close').on('click', function() {
-		$(this).parent().slideUp('fast');
+		$(this).parent().hide();
 	});
 });
