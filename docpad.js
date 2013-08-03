@@ -7,9 +7,10 @@ module.exports = {
 
     // Informações da ONG
     conf: {
-	  disqus: "ongboilerplate",
       name: "Minha ong",
       description: "Descrição simples da ONG",
+	  disqus: "ongboilerplate",
+	  googleCalendar: "lkcl6337orvldan0l52h0sfj4k@group.calendar.google.com",
       address: "Largo Jorn. Glênio Peres, Centro",
       city: "Porto Alegre",
       state: "RS"
