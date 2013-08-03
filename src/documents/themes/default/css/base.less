@@ -171,24 +171,40 @@ nav {
   float: left;
   position: relative;
   margin: 2px;
-  cursor: pointer;
 }
 
-.member img {
+.member-photo {
   width: 50px;
   height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
 }
 
 .member-info {
   display: none;
   background-color: #fff;
+  margin: 5px;
   position: absolute;
-  top: 0;
-  left: 51px;
-  border: 1px solid red;
+  top: 45px;
+  left: 0px;
   z-index: 1;
+  box-shadow: rgba(0,0,0,0.4) 1px 1px 2px;
+  border-radius: 5px;
+  width: auto;
+  min-width: 400px;
+  padding: 2px 4px;
 }
 
+.member-info p {
+  font-size: 12px;
+  margin: 5px 0;
+}
+
+.member-links {
+  img {
+    height: 20px;
+  }
+}
 
 /* =============================================================================
    SPONSORS  and  PARTNERS

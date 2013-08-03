@@ -1,27 +1,35 @@
 <h2 class="section-title"><%= @labels['members'] %></h2>
 
-<ul class="speakers-list">
+<ul>
 <% for member in @members: %>
   <div class="member">
     <% if member.photo: %>
-      <img src="<%= member.photo %>" title="<%= member.name %>">
+      <img class="member-photo" src="<%= member.photo %>" title="<%= member.name %>">
     <% end %>
     <div class="member-info">
-      <div class="member-name"><%= member.name %></div>
-      <% if member.position: %>
-        <div><%= member.position %></div>
-      <% end %>
-      <% if member.bio: %>
-        <div><%= member.bio %></div>
-      <% end %>
+      <p class="member-name">
+        <%= member.name %>
+        <% if member.position: %>
+          (<%= member.position %>)
+        <% end %>
+      </p>
       <% if member.email: %>
-        <div><%= member.email %></div>
+        <p><a href="mailto:<%= member.email %>"><%= member.email %></a></p>
       <% end %>
-      <% if member.twitter: %>
-        <div><%= member.twitter %></div>
-      <% end %>
-      <% if member.facebook: %>
-        <div><%= member.facebook %></div>
+      <p class="member-links">
+        <% if member.facebook: %>
+          <a href="http://facebook.com/<%= member.facebook %>">
+            <img src="img/facebook.png" title="Facebook">
+          </a>
+        <% end %>
+        <% if member.twitter: %>
+          <a href="http://twitter.com/<%= member.twitter %>">
+            <img src="img/twitter.png" title="Twitter">
+          </a>
+        <% end %>
+      </p>
+      <% if member.bio: %>
+        <p><%= member.bio %></p>
       <% end %>
     </div>
   </div>
