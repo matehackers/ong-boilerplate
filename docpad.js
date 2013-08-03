@@ -9,10 +9,7 @@ module.exports = {
     conf: {
       name: "Minha ong",
       description: "Descrição simples da ONG",
-      // date: "November 15",
-      // price: "$100",
-      // venue: "Coco Bongo",
-      address: "Boulevard Kukulcan, 30",
+//      address: "Boulevard Kukulcan, 30",
       city: "Minha Cidade",
       state: "Meu estado"
     },
@@ -20,8 +17,8 @@ module.exports = {
     // Informações do site
     site: {
       theme: "default",
-      url: "http://confboilerplate.com",
-      googleanalytics: "UA-33656081-1"
+      url: "http://confboilerplate.com"
+//      ,googleanalytics: "UA-33656081-1"
     },
 
     // Sessões ativas do site
@@ -34,7 +31,7 @@ module.exports = {
       'members',      // Membros, pessoas
       'schedule',     // Agenda
       'contact',      // Contato
-      'location',     // Localização
+      //'location',     // Localização
       'partners'      // Parceiros, apoio
     ],
 

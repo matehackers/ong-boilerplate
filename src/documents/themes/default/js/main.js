@@ -38,9 +38,10 @@
 }(jQuery, window, document));
 
 $(function() {
-	$('.member').on('mouseenter', function() {
-		$(this).find('.member-info').slideDown('fast');
-	}).on('mouseleave', function() {
-		$(this).find('.member-info').slideUp('fast');
+	$('.member-photo').on('click', function() {
+		$(this).parent().find('.member-info').slideToggle('fast');
+	});
+	$('.close').on('click', function() {
+		$(this).parent().slideUp('fast');
 	});
 });

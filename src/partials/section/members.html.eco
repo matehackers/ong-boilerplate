@@ -7,6 +7,7 @@
       <img class="member-photo" src="<%= member.photo %>" title="<%= member.name %>">
     <% end %>
     <div class="member-info">
+      <img class="close" src="img/close.png"/>
       <p class="member-name">
         <%= member.name %>
         <% if member.position: %>
