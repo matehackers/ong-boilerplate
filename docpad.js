@@ -390,7 +390,7 @@ module.exports = {
       photos: [
         {
           url: 'img/empty_photo.png',
-          description: 'First Photo'
+          description: 'First Photo another a big text hahaha'
         },
         {
           url: 'img/empty_photo.png',
@@ -414,6 +414,30 @@ module.exports = {
         }
       ],
       videos: [
+        {
+          url: 'http://www.youtube.com/embed/0r64JMA1tMA',
+          description: 'First Video another a big text hahaha'
+        },
+        {
+          url: 'http://www.youtube.com/embed/0r64JMA1tMA',
+          description: 'Second Video'
+        },
+        {
+          url: 'http://www.youtube.com/embed/0r64JMA1tMA',
+          description: 'Third Video'
+        },
+        {
+          url: 'http://www.youtube.com/embed/0r64JMA1tMA',
+          description: 'Fourth Video'
+        },
+        {
+          url: 'http://www.youtube.com/embed/0r64JMA1tMA',
+          description: 'Fifth Video'
+        },
+        {
+          url: 'http://www.youtube.com/embed/0r64JMA1tMA',
+          description: 'Sixth Video'
+        }
       ]
     },
 

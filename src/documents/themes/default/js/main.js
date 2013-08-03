@@ -38,6 +38,7 @@
 }(jQuery, window, document));
 
 $(function() {
+	// members
 	$('.member-photo').on('click', function() {
 		var currentInfo = $(this).parent().find('.member-info');
 		$('.member-info:visible').not(currentInfo).hide();
@@ -46,4 +47,18 @@ $(function() {
 	$('.close').on('click', function() {
 		$(this).parent().hide();
 	});
+
+	//media
+	$('.media-tab').on('click', function() {
+		var currentTab = $('.media-tab.active').not(this);
+		if (currentTab.length) {
+			currentTab.removeClass('active');
+			$('#' + currentTab.attr('data-tab')).hide();
+		}
+		$(this).addClass("active");
+		$('#' + $(this).attr('data-tab')).show();
+	});
+
+	$('.media-tab-photos').trigger('click');
+
 });
