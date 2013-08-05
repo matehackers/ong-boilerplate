@@ -396,15 +396,6 @@ module.exports = {
       }
     ],
 
-    // List of Sponsors
-    // sponsors: [
-    //   {
-    //     name: "Eventick",
-    //     logo: "themes/yellow-swan/img/sponsor.png",
-    //     url: "http://eventick.com.br"
-    //   }
-    // ],
-
     media: {
       photos: [
         {
@@ -464,7 +455,7 @@ module.exports = {
     partners: [
       {
         name: "Matehackers",
-        logo: "themes/yellow-swan/img/partner.png",
+        logo: "themes/default/img/partner.png",
         url: "http://matehackers.org"
       }
     ],
