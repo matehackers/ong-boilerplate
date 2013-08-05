@@ -1,3 +1,24 @@
 <h2 class="section-title"><%= @labels['initiatives'] %></h2>
 
-<p itemprop="description">Texto descrevendo as atividades e iniciativas da ONG. Texto descrevendo as atividades e iniciativas da ONG. Texto descrevendo as atividades e iniciativas da ONG. Texto descrevendo as atividades e iniciativas da ONG. Texto descrevendo as atividades e iniciativas da ONG. Texto descrevendo as atividades e iniciativas da ONG. Texto descrevendo as atividades e iniciativas da ONG. Texto descrevendo as atividades e iniciativas da ONG. Texto descrevendo as atividades e iniciativas da ONG. Texto descrevendo as atividades e iniciativas da ONG. Texto descrevendo as atividades e iniciativas da ONG. Texto descrevendo as atividades e iniciativas da ONG. Texto descrevendo as atividades e iniciativas da ONG. Texto descrevendo as atividades e iniciativas da ONG. Texto descrevendo as atividades e iniciativas da ONG. Texto descrevendo as atividades e iniciativas da ONG.</p>
+<p itemprop="description">Descrição das atividades e iniciativas da ONG</p>
+
+<ul class="initiatives-list">
+<% for init in @initiatives: %>
+  <li class="initiative-item" itemprop="performer" itemscope >
+    <% if init.photo: %>
+      <span class="initiative-photo">
+        <img class="photo" src="<%= init.photo %>" alt="<%= init.name %>" itemprop="image">
+      </span>
+    <% end %>
+
+    <h3 class="initiative-title">
+        <span> <%= init.title %></span>
+    </h3>
+
+    <p itemprop="description" class="initiative-description">
+        <span> <%= init.description %></span>
+    </p>
+
+    </li>
+<% end %>
+</ul>

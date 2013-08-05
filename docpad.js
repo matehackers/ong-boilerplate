@@ -9,8 +9,8 @@ module.exports = {
     conf: {
       name: "Minha ong",
       description: "Descrição simples da ONG",
-	  disqus: "ongboilerplate",
-	  googleCalendar: "lkcl6337orvldan0l52h0sfj4k@group.calendar.google.com",
+      disqus: "ongboilerplate",
+      googleCalendar: "lkcl6337orvldan0l52h0sfj4k@group.calendar.google.com",
       address: "Largo Jorn. Glênio Peres, Centro",
       city: "Porto Alegre",
       state: "RS"
@@ -50,6 +50,24 @@ module.exports = {
       partners: "Apoio",
       media: 'Multimídia'
     },
+
+    initiatives: [
+      {
+        title: "Iniciativa 1",
+        description: "Descrição da atividade",
+        photo: "img/empty_photo.png"
+      },
+      {
+        title: "Iniciativa 2",
+        description: "Descrição da atividade",
+        photo: "img/empty_photo.png"
+      },
+      {
+        title: "Iniciativa 3",
+        description: "Descrição da atividade",
+        photo: "img/empty_photo.png"
+      },
+    ],
 
     members: [
       {
@@ -378,15 +396,6 @@ module.exports = {
       }
     ],
 
-    // List of Sponsors
-    // sponsors: [
-    //   {
-    //     name: "Eventick",
-    //     logo: "themes/yellow-swan/img/sponsor.png",
-    //     url: "http://eventick.com.br"
-    //   }
-    // ],
-
     media: {
       photos: [
         {
@@ -445,9 +454,9 @@ module.exports = {
     // List de parceiros e apoios
     partners: [
       {
-        name: "BrazilJS",
-        logo: "themes/yellow-swan/img/partner.png",
-        url: "http://braziljs.org"
+        name: "Matehackers",
+        logo: "themes/default/img/partner.png",
+        url: "http://matehackers.org"
       }
     ],
 
