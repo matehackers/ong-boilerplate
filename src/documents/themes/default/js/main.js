@@ -50,13 +50,8 @@ $(function() {
 
 	//media
 	$('.media-tab').on('click', function() {
-		var currentTab = $('.media-tab.active').not(this);
-		if (currentTab.length) {
-			currentTab.removeClass('active');
-			$('#' + currentTab.attr('data-tab')).hide();
-		}
-		$(this).addClass("active");
-		$('#' + $(this).attr('data-tab')).show();
+		$('.media-content.active').removeClass('active');
+		$(this).parents('.media-content').addClass('active');
 	});
 
 	$('.media-tab-photos').trigger('click');
