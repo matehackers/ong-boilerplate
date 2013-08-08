@@ -49,16 +49,13 @@ $(function() {
 	});
 
 	//media
-	$('.media-tab').on('click', function() {
-		var currentTab = $('.media-tab.active').not(this);
-		if (currentTab.length) {
-			currentTab.removeClass('active');
-			$('#' + currentTab.attr('data-tab')).hide();
-		}
-		$(this).addClass("active");
+	$('.media-tabs').on('click', 'li', function() {
+		$('.media-tabs .active').not(this).removeClass('active');
+		$(this).addClass('active');
+		$('.media-content:visible').hide();
 		$('#' + $(this).attr('data-tab')).show();
 	});
 
-	$('.media-tab-photos').trigger('click');
+	$('.media-tabs li:first').trigger('click');
 
 });

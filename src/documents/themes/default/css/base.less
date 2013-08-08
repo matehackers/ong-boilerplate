@@ -1,5 +1,6 @@
 @import "_mixins.less";
 
+@default-background-color: #f6f6f6;
 @default-border-color: #ddd;
 
 /* =============================================================================
@@ -223,40 +224,39 @@ nav {
    Media
    ========================================================================== */
 
-.media-tab {
-  border-width:1px 1px 0 1px;
-  border-color: @default-border-color;
-  border-style: solid;
-  font-size: 20px;
-  height: 30px;
+.media-tabs {
+  line-height: normal;
   text-align: center;
-  width:49%;
-  display: inline-block;
-  cursor: pointer;
-  .active {
-    background-color: #888;
+  margin-bottom: -1px;
+  li {
+    border: 1px solid @default-border-color;
+    display: inline-block;
+    width:49%;
+    font-size: 30px;
+    text-align: center;
+    background-color: #ddd;
+    cursor: pointer;
+    &:first-child {
+      float: left;
+    }
+    &:last-child {
+      float: right;
+    }
+    &.active {
+      border-bottom-color: @default-background-color;
+      background-color: @default-background-color;
+    }
   }
-}
-
-.media-tab-photos {
-  float:left;
-}
-
-.media-tab-videos {
-  float:right;
 }
 
 .media-content {
-  border: 1px solid @default-border-color;
   display: none;
-  .active {
-    display: block;
-  }
+  border: 1px solid @default-border-color;
 }
 
 .media-element {
   float: left;
-  margin: 20px;
+  margin: 19px;
   width: 200px;
   .title {
     position: relative;
