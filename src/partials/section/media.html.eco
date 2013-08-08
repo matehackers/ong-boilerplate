@@ -1,24 +1,24 @@
 <h2 class="section-title"><%= @labels['media'] %></h2>
 
-<div>
-	<p class="media-tab media-tab-photos" data-tab="media-photos">Fotos</p>
-	<div class="media-tab media-tab-videos" data-tab="media-videos">Videos</div>
+<ul class="media-tabs">
+	<li data-tab="media-photos">Fotos</li>
+	<li data-tab="media-videos">Videos</li>
+</ul>
 
-	<div id="media-photos" class="media-content">
-	<% for photo in @media.photos:%>
-		<div class="media-element media-photo">
-			<img src="<%= photo.url %>" title="<%=photo.description%>"/>
-			<p class="title"><%=photo.description%><p>
-		</div>
-	<% end %>
+<div id="media-photos" class="media-content">
+<% for photo in @media.photos:%>
+	<div class="media-element media-photo">
+		<img src="<%= photo.url %>" title="<%=photo.description%>"/>
+		<p class="title"><%=photo.description%><p>
 	</div>
+<% end %>
+</div>
 
-	<div id="media-videos" class="media-content">
-	<% for video in @media.videos:%>
-		<div class="media-element media-video">
-			<iframe width="560" height="315" src="<%= video.url %>" frameborder="0" allowfullscreen></iframe>
-			<p class="title"><%=video.description%><p>
-		</div>
-	<% end %>
+<div id="media-videos" class="media-content">
+<% for video in @media.videos:%>
+	<div class="media-element media-video">
+		<iframe width="560" height="315" src="<%= video.url %>" frameborder="0" allowfullscreen></iframe>
+		<p class="title"><%=video.description%><p>
 	</div>
+<% end %>
 </div>

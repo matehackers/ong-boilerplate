@@ -425,27 +425,27 @@ module.exports = {
       ],
       videos: [
         {
-          url: 'http://www.youtube.com/embed/0r64JMA1tMA',
+          url: 'http://www.youtube.com/embed/Sf3pc-7gfOg',
           description: 'First Video another a big text hahaha'
         },
         {
-          url: 'http://www.youtube.com/embed/0r64JMA1tMA',
+          url: 'http://www.youtube.com/embed/Sf3pc-7gfOg',
           description: 'Second Video'
         },
         {
-          url: 'http://www.youtube.com/embed/0r64JMA1tMA',
+          url: 'http://www.youtube.com/embed/Sf3pc-7gfOg',
           description: 'Third Video'
         },
         {
-          url: 'http://www.youtube.com/embed/0r64JMA1tMA',
+          url: 'http://www.youtube.com/embed/Sf3pc-7gfOg',
           description: 'Fourth Video'
         },
         {
-          url: 'http://www.youtube.com/embed/0r64JMA1tMA',
+          url: 'http://www.youtube.com/embed/Sf3pc-7gfOg',
           description: 'Fifth Video'
         },
         {
-          url: 'http://www.youtube.com/embed/0r64JMA1tMA',
+          url: 'http://www.youtube.com/embed/Sf3pc-7gfOg',
           description: 'Sixth Video'
         }
       ]
